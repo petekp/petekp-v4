@@ -51,7 +51,7 @@ var common = {
     plugins: [
         new webpack.HotModuleReplacementPlugin(),
         new HtmlwebpackPlugin({
-            title: 'Grid Prototyping App'
+            title: 'Pete Petrash'
         }),
         new OpenBrowserPlugin({ url: 'http://localhost:8080' })
     ]
