@@ -1,0 +1,52 @@
+$grid-columns: 12;
+$homedepotcolor: #FF7D32;
+
+.MasterDetailGrid{
+    lost-utility: clearfix;
+    @lost gutter 2vw;
+    z-index: 9;
+}
+.MasterNav{
+    lost-column: 2/12;
+}
+.Detail{
+    lost-column: 10/12;
+}
+.grid-example{
+    lost-utility: clearfix;
+    opacity: 0.7;
+    padding: 1vw;
+    margin: 0 0 2.4vw 0;
+    box-shadow: 0 0 0 1px $homedepotcolor inset;
+    transition: all 0.38s cubic-bezier(.27,.19,.36,.99);
+
+    &:hover{
+        opacity: 1;
+    }
+    & > div{
+        position: relative !important;
+        height: 50vh;
+        background: $homedepotcolor;
+        opacity: 0.2;
+        transition: all 0.3s cubic-bezier(.27,.19,.36,.99);
+
+        &:hover{
+            opacity: 0.55;
+        }
+    }
+}
+.grid-example-1 > div{
+    lost-column: 12/12;
+}
+.grid-example-2 > div{
+    lost-column: 6/12;
+}
+.grid-example-4 > div{
+    lost-column: 3/12;
+}
+.grid-example-6 > div{
+    lost-column: 2/12;
+}
+.grid-example-9 > div{
+    lost-column: 1/9;
+}
